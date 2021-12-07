@@ -12,12 +12,13 @@ import Footer from './Footer'
 import useStyles from '../utils/styles';
 
 
-export default function Layout({children}) {
+export default function Layout({children, description, title}) {
     const classes = useStyles();
     return (
         <div>
             <Head>
-                <title>Barberry</title>
+             <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
+             {description && <meta name="description" content={description}></meta>}
             </Head>
             <AppBar position="static" className={classes.navbar}>
                 <Toolbar>
