@@ -13,8 +13,8 @@ const data ={
             description: 'A Popular Bag'
         },
         {
-            name:'Hand Bag',
-            slug: 'hand-bag',
+            name:'Blue Bag',
+            slug: 'blue-bag',
             category: 'bags',
             image: '/images/bag2.jpg',
             price: 80,
@@ -25,8 +25,8 @@ const data ={
             description: 'A Popular Bag'
         },
         {
-            name:'Hand Bag',
-            slug: 'hand-bag',
+            name:'Big Hand Bag',
+            slug: 'big-hand-bag',
             category: 'bags',
             image: '/images/bag3.jpg',
             price: 90,
@@ -37,8 +37,8 @@ const data ={
             description: 'A Popular Bag'
         },
         {
-            name:'Hand Bag',
-            slug: 'hand-bag',
+            name:'Ash Bag',
+            slug: 'ash-bag',
             category: 'bags',
             image: '/images/bag4.jpg',
             price: 60,
@@ -49,8 +49,8 @@ const data ={
             description: 'A Popular Bag'
         },
         {
-            name:'Hand Bag',
-            slug: 'hand-bag',
+            name:'Pink Bag',
+            slug: 'pink-bag',
             category: 'bags',
             image: '/images/bag5.jpg',
             price: 70,
@@ -97,8 +97,8 @@ const data ={
             description: 'A Popular Bag'
         },
         {
-            name:'Hand Bag',
-            slug: 'hand-bag',
+            name:'Cute Bag',
+            slug: 'cute-bag',
             category: 'bags',
             image: '/images/bag9.jpg',
             price: 70,

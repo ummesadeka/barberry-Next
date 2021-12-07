@@ -5,7 +5,10 @@ import {
     Toolbar,
     Typography,
     Container,
-    Link
+    Link,
+    createTheme,
+    ThemeProvider,
+    CssBaseline,
 } from '@material-ui/core'
 import NextLink from 'next/link'
 import Footer from './Footer'
@@ -13,19 +16,44 @@ import useStyles from '../utils/styles';
 
 
 export default function Layout({children, description, title}) {
+    const theme = createTheme({
+        typography: {
+            h1: {
+              fontSize: '1.6rem',
+              fontWeight: 400,
+              margin: '1rem 0',
+            },
+            h2: {
+              fontSize: '1.4rem',
+              fontWeight: 400,
+              margin: '1rem 0',
+            },
+          },
+          palette: {
+            type: 'light',
+            primary: {
+              main: '#82b440',
+            },
+            secondary: {
+              main: '#208080',
+            },
+          },
+    })
     const classes = useStyles();
     return (
         <div>
             <Head>
-             <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
+             <title>{title ? `${title} - Next Barberry` : 'Next barberry'}</title>
              {description && <meta name="description" content={description}></meta>}
             </Head>
-            <AppBar position="static" className={classes.navbar}>
+            <ThemeProvider theme={theme}>
+              <CssBaseline/>
+              <AppBar position="static" className={classes.navbar}>
                 <Toolbar>
                 <NextLink href="/" passHref>
                         <Link>
                            <Typography className={classes.brand}>
-                               amazona
+                               Barberry
                            </Typography>
                         </Link>
                     </NextLink>
@@ -39,13 +67,14 @@ export default function Layout({children, description, title}) {
                         </NextLink>
                     </div>
                 </Toolbar>
-            </AppBar>
-            <Container className={classes.main}>
+              </AppBar>
+              <Container className={classes.main}>
                 {children}
-            </Container>
-            <footer className={classes.footer}>
+              </Container>
+              <footer className={classes.footer}>
                 <Footer/>
-            </footer>
+              </footer>
+            </ThemeProvider>
         </div>
     )
 }
