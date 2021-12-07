@@ -2,6 +2,7 @@ const data ={
     products: [
         {
             name:'College Bag',
+            slug: 'college-bag',
             category: 'bags',
             image: '/images/bag1.jpg',
             price: 70,
@@ -13,6 +14,7 @@ const data ={
         },
         {
             name:'Hand Bag',
+            slug: 'hand-bag',
             category: 'bags',
             image: '/images/bag2.jpg',
             price: 80,
@@ -24,6 +26,7 @@ const data ={
         },
         {
             name:'Hand Bag',
+            slug: 'hand-bag',
             category: 'bags',
             image: '/images/bag3.jpg',
             price: 90,
@@ -35,6 +38,7 @@ const data ={
         },
         {
             name:'Hand Bag',
+            slug: 'hand-bag',
             category: 'bags',
             image: '/images/bag4.jpg',
             price: 60,
@@ -46,6 +50,7 @@ const data ={
         },
         {
             name:'Hand Bag',
+            slug: 'hand-bag',
             category: 'bags',
             image: '/images/bag5.jpg',
             price: 70,
@@ -57,6 +62,7 @@ const data ={
         },
         {
             name:'Hand Bag',
+            slug: 'hand-bag',
             category: 'bags',
             image: '/images/bag6.jpg',
             price: 70,
@@ -68,6 +74,7 @@ const data ={
         },
         {
             name:'Small Bag',
+            slug: 'small-bag',
             category: 'bags',
             image: '/images/bag7.jpg',
             price: 40,
@@ -79,6 +86,7 @@ const data ={
         },
         {
             name:'Bag Set',
+            slug: 'bag-set',
             category: 'bags',
             image: '/images/bag8.jpg',
             price: 190,
@@ -90,6 +98,7 @@ const data ={
         },
         {
             name:'Hand Bag',
+            slug: 'hand-bag',
             category: 'bags',
             image: '/images/bag9.jpg',
             price: 70,

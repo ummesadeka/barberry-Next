@@ -3,6 +3,7 @@ import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid
 import Layout from '../components/Layout'
 import data from '../utils/data'
 import useStyles from '../utils/styles';
+import NextLink from 'next/link';
 
 export default function Home() {
   const classes = useStyles();
@@ -14,6 +15,7 @@ export default function Home() {
           {data.products.map((product) => (
             <Grid item md={4} sm={6} key={product.name}>
               <Card>
+                <NextLink href={ `/product/${product.slug}`} passHref>
                 <CardActionArea>
                   <CardMedia
                   className={classes.productImage}
@@ -25,6 +27,7 @@ export default function Home() {
                     <Typography>{product.name}</Typography>
                   </CardContent>
                 </CardActionArea>
+                </NextLink>
                 <CardActions>
                   <Typography>$ {product.price}</Typography>
                   <Button size="small" color="primary">
